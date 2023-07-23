@@ -23,8 +23,6 @@ h1, h2, h4 {
     margin-top: 0;
 }
 
-
-
 .container {
     width: 80%;
     max-width: 1200px;
@@ -66,4 +64,21 @@ h1, h2, h4 {
     border-radius: 100px;
 }
 
-/*  test commit */
+/* section-one */
+
+.section-one {
+    background: #e2e2e2;
+    padding: 8rem 0 3rem 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.section-one__title {
+    font-size: 30px;
+    color: #A59678;;
+    margin-bottom: 0;
+}
+
+.section-one .col {
+    margin-bottom: 5rem;
+}
