@@ -11,6 +11,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
+    color: #2E323F;
 }
 
 img {
@@ -68,7 +69,7 @@ h1, h2, h4 {
 
 .section-one {
     background: #e2e2e2;
-    padding: 8rem 0 3rem 0;
+    padding: 6rem 0 3rem 0;
     font-size: 18px;
     text-align: center;
 }
@@ -81,4 +82,48 @@ h1, h2, h4 {
 
 .section-one .col {
     margin-bottom: 5rem;
+}
+
+/* section-two */
+
+.section-two {
+    background: white;
+    padding: 6rem 0;
+}
+
+.section-two-article {
+    font-size: 21px;
+    margin-bottom: 3rem;
+}
+
+.section-two-article__title {
+    font-size: 36px;
+    color: #A59678;
+    margin-bottom: 1em;
+}
+
+.section-two-article__img {
+    margin: 1em 0;
+}
+
+.section-two-side-card {
+    background: #2E323F;
+    color: white;
+    padding: 2em;
+    margin: 2.5rem 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.section-two-side-card__title {
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+/* footer */
+
+.footer {
+    background: #2E323F;
+    color: white;
+    text-align: center;
 }
