@@ -20,7 +20,7 @@ img {
 
 h1, h2, h4 {
     font-family: 'Oswald', sans-serif;
-    line-height: 1;
+    line-height: 1.2;
     margin-top: 0;
 }
 
@@ -38,7 +38,7 @@ ul {
 
 /* nav-bar */
 
-header {
+.nav-bar {
     background: #2E323F;
     padding: 1em 0;
     text-align: center;
@@ -46,6 +46,7 @@ header {
 
 .nav {
     width: 100%;
+    font-family: 'Oswald', sans-serif;
     visibility: hidden;
     height: 0;
     position: absolute;
@@ -103,6 +104,27 @@ header {
 
 .nav-bar__logo {
     height: 30px;
+}
+
+.nav__item {
+    margin: 2.5em 0 1.5em 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
+
+.nav__link:hover {
+    opacity: 60%;
+}
+
+.nav__link--btn {
+    background-color: #A59678;
+    padding: .5em 2em;
+    border-radius: 100px;
 }
 
 .nav--visible {
@@ -220,6 +242,7 @@ header {
 .footer__title {
     font-size: 40px;
     margin-bottom: 2em;
+    color: white;
     text-align: center;
 }
 
@@ -230,6 +253,7 @@ header {
 
 .footer-desc__title {
     /* font-family: 'Oswald', sans-serif; */
+    text-transform: capitalize;
     font-size: 21px;
     color: #A59678;
 }
