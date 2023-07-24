@@ -135,17 +135,11 @@ ul {
 
 
 
-
-
-
-
-
-
 /* intro */
 
 .intro {
     background: #3B4050;
-    padding: 5rem 0;
+    padding: 6rem 0;
     color: white;
 }
 
@@ -284,4 +278,24 @@ ul {
 
 .footer-link-list li {
     margin: 1em 0;
+}
+
+@media (min-width: 700px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        border: 1px red solid;
+    }
+
+    .intro__title {
+        width: 47%;
+        border: 1px red solid;
+        margin: 0;
+    }
+
+    .intro-subtitle {
+        width: 47%;
+        align-self: flex-end;
+        border: 1px red solid;
+    }
 }
