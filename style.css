@@ -24,6 +24,10 @@ h1, h2, h4 {
     margin-top: 0;
 }
 
+p {
+    margin-top: 0;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -34,6 +38,8 @@ ul {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    /* overflow: hidden; */
+    border: 1px red solid;
 }
 
 /* nav-bar */
@@ -49,89 +55,10 @@ ul {
     font-family: 'Oswald', sans-serif;
     visibility: hidden;
     height: 0;
-    position: absolute;
+    /* position: absolute; */
 }
 
-.nav-toggle {
-    cursor: pointer;
-    border: 0;
-    width: 3em;
-    height: 3em;
-    padding: 0em;
-    border-radius: 20%;
-    background: #6F737F;
-    color: white;
-    transition: opacity 250ms ease;
-    
-    position: absolute;
-    left: 0;
-    margin-left: 1rem;
 
-}
-
-.nav-toggle:focus,
-.nav-toggle:hover {
-    opacity: .75;
-}
-
-.hamburger {
-    width: 50%;
-    position: relative;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-    display: block;
-    margin: 0 auto;
-    height: 3px;
-    background: white;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    width: 100%;
-}
-
-.hamburger::before {
-    transform: translateY(-6px);
-}
-
-.hamburger::after {
-    transform: translateY(3px);
-}
-
-.nav-bar__logo {
-    height: 30px;
-}
-
-.nav__item {
-    margin: 2.5em 0 1.5em 0;
-}
-
-.nav__link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: white;
-}
-
-.nav__link:hover {
-    opacity: 60%;
-}
-
-.nav__link--btn {
-    background-color: #A59678;
-    padding: .5em 2em;
-    border-radius: 100px;
-}
-
-.nav--visible {
-    visibility: visible;
-    height: auto;
-    position: relative;
-} 
 
 
 
@@ -144,7 +71,8 @@ ul {
 }
 
 .intro__title {
-    font-size: 90px;
+    font-size: 65px;
+    border: 1px white solid;
 }
 
 .intro__title-highlight {
@@ -153,10 +81,12 @@ ul {
 
 .intro-subtitle {
     font-size: 24px;
+    border: 1px yellow solid;
 }
 
 .intro-subtitle__text {
-    margin: 2.5rem 0;
+    /* margin: 2.5rem 0; */
+    border: 1px green solid;
 }
 
 .intro-subtitle__btn {
@@ -280,22 +210,22 @@ ul {
     margin: 1em 0;
 }
 
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
+    .intro__title {
+        font-size: 90px;
+        margin: 0;
+    }
+} */
+
+/* @media (min-width: 1000px) {
     .row {
         display: flex;
-        justify-content: space-between;
-        border: 1px red solid;
+        align-items: flex-end;
     }
 
     .intro__title {
-        width: 47%;
-        border: 1px red solid;
+        font-size: 90px;
         margin: 0;
     }
+} */
 
-    .intro-subtitle {
-        width: 47%;
-        align-self: flex-end;
-        border: 1px red solid;
-    }
-}
