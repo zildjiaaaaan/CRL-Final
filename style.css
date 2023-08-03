@@ -224,6 +224,10 @@ ul {
     padding: 10rem 0;
 }
 
+.section-two-side {
+    border: 1px yellow solid;
+}
+
 .section-two-side-card {
     background: #2E323F;
     color: white;
@@ -304,7 +308,6 @@ ul {
 @media (min-width: 1000px) {
     .row {
         display: flex;
-        justify-items: center;
         gap: 2.5em;
     }
 
@@ -312,9 +315,8 @@ ul {
         align-items: flex-end;
     }
 
-    .section-one__col {
-        margin: 0;
-        border: 1px palevioletred solid;
+    .section-one__col + .section-one__col {
+        margin-top: 0rem;
     }
 
     .section-two--block, .footer--block{
@@ -324,6 +326,30 @@ ul {
     .section-two-side--row {
         display: flex;
         gap: 2.5em;
+    }
+}
+
+@media (min-width: 1500px) {
+    .section-two--block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-two-article {
+        width: 60%;
+    }
+
+    .section-two-side--row {
+        display: block;
+        width: 30%;
+    }
+
+    .section-two-side-card {
+        margin: 0;
+    }
+
+    .section-two-side-card + .section-two-side-card {
+        margin-top: 2.5rem;
     }
 }
 
